@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rufina:wght@400;700&display=swap');
+
+:root {
+    --max-width: 1100px;
+    --font-rufina: 'Rufina', serif;
+    --font-inter: 'Inter', sans-serif;
+
+    --dark-green: rgba(35, 48, 0, 1);
+    --green: rgba(94, 102, 0, 1);
+    --light-green: rgba(156, 170, 0, 1);
+    --white-green: rgba(235, 240, 228, 1);
+    --black: rgba(0, 0, 0);
+    --dark-grey: rgba(77, 77, 77, 1);
+    --grey: rgba(176, 176, 176, 1);
+    --white: rgba(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    background: var(--dark-green);
+    /*font-family: var(--font-rufina);*/
+    font-family: var(--font-inter);
+}
+
