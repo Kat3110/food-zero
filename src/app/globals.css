@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rufina:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@300;400;700;900&family=Rufina:wght@400;700&display=swap');
 :root {
-    --max-width: 1100px;
+    --max-width: 1920px;
     --font-rufina: 'Rufina', serif;
     --font-inter: 'Inter', sans-serif;
+    --font-lato: 'Lato', sans-serif;
 
     --dark-green: rgba(35, 48, 0, 1);
     --green: rgba(94, 102, 0, 1);

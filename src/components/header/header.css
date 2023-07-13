@@ -55,7 +55,7 @@
 }
 
 .header__phone a{
-    font-family: Inter;
+    font-family: var(--font-inter);
     color: var(--white);
     font-size: 26px;
     font-weight: 400;
@@ -73,7 +73,7 @@
 }
 
 .header__btn a{
-    font-family: Rufina;
+    font-family: var(--font-rufina);
     color: var(--white);
     text-decoration: none;
     font-size: 32px;
