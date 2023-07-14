@@ -1,0 +1,47 @@
+.structure {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 207px 0 190px;
+}
+
+.structure__card {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    align-items: center;
+    justify-content: center;
+    max-width: 508px;
+    width: 100%;
+}
+
+.structure__icon {
+    max-width: 260px;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 260px;
+    background: var(--white-green);
+}
+
+.structure__icon img{
+    max-width: 184px;
+    width: 100%;
+    height: 184px;
+}
+
+.structure__title{
+    font-family: var(--font-rufina);
+    line-height: 64px;
+}
+
+.structure__subtitle{
+    line-height: 140%;
+    letter-spacing: 0.48px;
+    text-align: center;
+}
+
