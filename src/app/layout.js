@@ -1,8 +1,5 @@
 import './globals.css'
-// import {Inter} from 'next/font/google'
 import {Header} from "@/components/header/Header";
-
-// const inter = Inter({subsets: ['latin']})
 
 export const metadata = {
   title: 'Food Zero',
@@ -11,12 +8,11 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang="en">
-    <link rel='icon' href='orangeLink.svg'/>
-    <meta name="description" content='Healthy food restaurant' />
-    <body>
-    <Header/>
-    {children}
-    </body>
-
+      <link rel='icon' href='orangeLink.svg'/>
+      <meta name="description" content='Healthy food restaurant' />
+      <body>
+        <Header/>
+        {children}
+      </body>
     </html>)
 }

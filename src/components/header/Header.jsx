@@ -27,7 +27,7 @@ export function Header() {
           <a href="tel:+86852346000">+86 852 346 000</a>
         </div>
         <button className='header__btn'>
-          <a href="#">Reservations</a>
+          <a className='heading-five' href="#">Reservations</a>
         </button>
       </div>
     </header>

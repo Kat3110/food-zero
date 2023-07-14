@@ -25,7 +25,100 @@ body {
     max-width: 100vw;
     overflow-x: hidden;
     background: var(--dark-green);
-    /*font-family: var(--font-rufina);*/
-    font-family: var(--font-inter);
+    font-family: var(--font-rufina);
 }
 
+.large-title {
+    font-weight: 700;
+    font-size: 148px;
+}
+
+.heading-one {
+    font-weight: 700;
+    font-size: 108px;
+}
+
+.heading-two {
+    font-weight: 700;
+    font-size: 88px;
+}
+
+.heading-three {
+    font-weight: 700;
+    font-size: 68px;
+}
+
+.heading-four {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.heading-five {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.heading-six {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.nav-item {
+    font-family: var(--font-lato);
+    font-weight: 700;
+    font-size: 66px;
+}
+
+.nav-subitem {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.body {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.this-body-B {
+    font-family: var(--font-lato);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.body-cap {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.excerpt {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.label {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.comments {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.widgets-title {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.widgets-text {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 18px;
+}

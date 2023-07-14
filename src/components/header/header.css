@@ -3,6 +3,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 46px 138px;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .header__nav {
@@ -76,7 +79,5 @@
     font-family: var(--font-rufina);
     color: var(--white);
     text-decoration: none;
-    font-size: 32px;
-    font-weight: 700;
     line-height: 48px;
 }
