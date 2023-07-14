@@ -12,7 +12,7 @@ export default function RootLayout({children}) {
   return (
     <html lang="en">
     <link rel='icon' href='orangeLink.svg'/>
-
+    <meta name="description" content='Healthy food restaurant' />
     <body>
     <Header/>
     {children}
