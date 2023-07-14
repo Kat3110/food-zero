@@ -29,7 +29,7 @@ export function HeroHeader() {
         <div className='hero-header__box'>
           <Image className='hero-header__picture' src={Mussels} alt='element menu'/>
           <div className='hero-header__text'>
-            <h3 className='heading-three hero-header__heading'>Start to plan<br/> your diet today</h3>
+            <h2 className='heading-three hero-header__heading'>Start to plan<br/> your diet today</h2>
             <p className='body hero-header__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit. Neque congue arcu</p>
           </div>
         </div>
