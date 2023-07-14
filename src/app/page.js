@@ -1,9 +1,10 @@
-import styles from './page.module.css'
+import './home.css'
+import {HeroHeader} from "@/components/hero-header/HeroHeader";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      wertyugih
+    <main className='main'>
+      <HeroHeader />
     </main>
   )
 }
