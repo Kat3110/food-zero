@@ -37,6 +37,7 @@
 .structure__title{
     font-family: var(--font-rufina);
     line-height: 64px;
+    text-align: center;
 }
 
 .structure__subtitle{
