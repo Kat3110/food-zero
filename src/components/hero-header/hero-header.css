@@ -103,13 +103,13 @@
     }
 }
 
-
 .hero-header__bottom{
     display: flex;
     width: 100%;
     align-items: start;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .hero-header__box {

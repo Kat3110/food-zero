@@ -1,0 +1,38 @@
+.menu {
+    display: flex;
+    position: relative;
+    color: var(--black);
+    padding: 176px 0 218px;
+}
+
+.menu .content {
+    display: flex;
+    flex-direction: column;
+    gap: 158px;
+}
+
+.menu__twig {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.menu__title {
+    font-family: var(--font-rufina);
+    line-height: 120px;
+}
+
+.menu__subtitle {
+    line-height: 140%;
+    letter-spacing: 0.48px;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 108px 60px;
+    z-index: 3;
+}
