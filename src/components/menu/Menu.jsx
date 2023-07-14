@@ -38,7 +38,7 @@ export function Menu() {
         <div className='menu__list'>
           {cards.map((card) => (
             <PriceList
-              id={card.title}
+              key={card.title}
               cost={card.cost}
               title={card.title}
               subtitle={card.subtitle}

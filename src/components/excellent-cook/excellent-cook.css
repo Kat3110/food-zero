@@ -1,0 +1,68 @@
+.excellent-cook {
+    color: black;
+    background: var(--white-green);
+    padding: 222px 0 0;
+    margin-bottom: 300px;
+    overflow: hidden;
+}
+
+.excellent-cook .content {
+    display: flex;
+    flex-direction: row;
+    gap: 61px;
+    position: relative;
+}
+
+.excellent-cook__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 649px;
+    width: 100%;
+    gap: 18px;
+}
+
+.excellent-cook__title {
+    font-family: var(--font-rufina);
+    line-height: 120px;
+}
+
+.excellent-cook__subtitle {
+    line-height: 140%;
+    letter-spacing: 0.48px;
+}
+
+.excellent-cook__flower {
+    max-width: 456px;
+    width: 100%;
+    max-height: 464px;
+    height: 100%;
+    transform: rotate(-23deg);
+    position: absolute;
+    bottom: 10px;
+    right: 170px;
+}
+
+.excellent-cook__picture {
+    position: relative;
+}
+
+.excellent-cook__flower-left {
+    position: absolute;
+    max-width: 366px;
+    width: 100%;
+    max-height: 372px;
+    height: 100%;
+    top: -115px;
+    left: -38px;
+    rotate: 91deg;
+}
+
+.excellent-cook__men {
+    max-width: 935px;
+    width: 100%;
+    max-height: 933px;
+    height: 100%;
+    object-fit: none;
+    z-index: 5;
+    position: inherit;
+}
