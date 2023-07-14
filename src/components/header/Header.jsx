@@ -13,7 +13,7 @@ export function Header() {
     console.log('1234')
   };
   return (
-    <header className='header'>
+    <header className='header content'>
       <div className='header__nav'>
         <Image src={Logo} alt='Logo'></Image>
         <div className={`header__menu ${isOpen ? 'open' : ''}`} onClick={handleClick}>
