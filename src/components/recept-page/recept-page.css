@@ -1,0 +1,17 @@
+.recept {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 130px 0 105px;
+}
+
+.recept__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 792px;
+    width: 100%;
+    gap: 68px;
+    position: relative;
+}
