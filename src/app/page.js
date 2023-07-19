@@ -4,6 +4,9 @@ import {Menu} from "@/components/menu/Menu";
 import {ExcellentCook} from "@/components/excellent-cook/ExcellentCook";
 import {Structure} from "@/components/structure/Structure";
 import {ReceptPage} from "@/components/recept-page/ReceptPage";
+import {Reservation} from "@/components/reservation/Reservation";
+import {Calories} from "@/components/calories/Calories";
+import {Reviews} from "@/components/reviews/Reviews";
 
 export default function Home() {
   return (
@@ -13,6 +16,9 @@ export default function Home() {
       <ExcellentCook/>
       <Structure/>
       <ReceptPage/>
+      <Reservation />
+      <Calories />
+      <Reviews />
     </main>
   )
 }
