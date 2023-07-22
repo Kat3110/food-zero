@@ -14,7 +14,7 @@ const slides = [
     img: Avatar,
     title: '“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus  Lorem ipsum dolor sit amet.',
     name: 'JungKook',
-    major: 'Recording producer'
+    major: 'Bloger'
   },
   {
     id: 2,
@@ -33,53 +33,55 @@ const slides = [
 ]
 
 export function Reviews() {
-  const [counter, setCounter] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   function handlePrevClick() {
-    setCounter((prevCounter) => (prevCounter - 1 + slides.length) % slides.length);
+    setCurrentSlide((currentSlide - 1 + slides.length) % slides.length);
   }
 
   function handleNextClick() {
-    setCounter((prevCounter) => (prevCounter + 1) % slides.length);
+    setCurrentSlide((currentSlide + 1) % slides.length);
   }
 
-  return (<>
-    <div className='reviews'>
-      <div className='content'>
-        <div className='reviews__slider'>
-          {slides.map((slide, index) => (
-            <div className={index === counter ? 'reviews__current' : 'reviews__item'} key={slide.id}>
-              <h2 className='heading-four reviews__title'>{slide.title}</h2>
-              <Image className='reviews__icon' src={Icon} alt='"'></Image>
-              <div className='reviews__bottom'>
-                <div className='reviews__account'>
-                  <Image className='reviews__img' src={slide.img} alt='Foto'></Image>
-                  <div>
-                    <p className='heading-five reviews__name'>{slide.name}</p>
-                    <span className='label reviews__major'>{slide.major}</span>
+  return (
+    <>
+      <div className='reviews'>
+        <div className='content'>
+          <div className='reviews__slide'>
+            {slides.map((slide, index) => (
+              <div className={index === currentSlide ? 'reviews__current' : 'reviews__item'} key={slide.id}>
+                <h2 className='heading-four reviews__title'>{slide.title}</h2>
+                <Image className='reviews__icon' src={Icon} alt='"'></Image>
+                <div className='reviews__bottom'>
+                  <div className='reviews__account'>
+                    <Image className='reviews__img' src={slide.img} alt='Foto'></Image>
+                    <div>
+                      <p className='heading-five reviews__name'>{slide.name}</p>
+                      <span className='label reviews__major'>{slide.major}</span>
+                    </div>
+                  </div>
+                  <div className='heading-five reviews__control'>
+                    <button type="button"
+                            className='reviews__btn reviews__prev'
+                            onClick={handlePrevClick}
+                            title="prev">
+                      <Image src={Arrow} alt='Arrow'></Image>
+                    </button>
+                    <div className='reviews__count'>{currentSlide + 1}/{slides.length}</div>
+                    <button type="button"
+                            className='reviews__btn reviews__next'
+                            onClick={handleNextClick}
+                            title="next"
+                    >
+                      <Image src={Arrow} alt='Arrow'></Image>
+                    </button>
                   </div>
                 </div>
-                <div className='heading-five reviews__control'>
-                  <button type="button"
-                          className='reviews__btn reviews__prev'
-                          onClick={handlePrevClick}
-                          title="prev">
-                    <Image src={Arrow} alt='Arrow'></Image>
-                  </button>
-                  1/2
-                  <button type="button"
-                          className='reviews__btn reviews__next'
-                          onClick={handleNextClick}
-                          title="next"
-                  >
-                    <Image src={Arrow} alt='Arrow'></Image>
-                  </button>
-                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  </>);
+    </>
+  );
 }

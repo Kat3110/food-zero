@@ -4,7 +4,7 @@ import Spices1 from '../../../public/spices1.png'
 import Spices2 from '../../../public/spices2.png'
 import Spices3 from '../../../public/spices3.png'
 import Mussels from '../../../public/Image-min.jpg'
-import Сondiment from '../../../public/Image(1)-min.jpg'
+import Seasonings from '../../../public/Image(1)-min.jpg'
 
 export function HeroHeader() {
   return (
@@ -38,7 +38,7 @@ export function HeroHeader() {
             <div className='hero-header__text'>
               <p className='body hero-header__subtitle'>Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit. Neque congue arcu</p>
             </div>
-            <Image className='hero-header__picture' src={Сondiment} alt='element menu'/>
+            <Image className='hero-header__picture' src={Seasonings} alt='element menu'/>
           </div>
         </div>
       </div>

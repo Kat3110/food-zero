@@ -10,6 +10,7 @@
     flex-direction: row;
     gap: 61px;
     position: relative;
+    /*flex-wrap: wrap;*/
 }
 
 .excellent-cook__text {

@@ -7,6 +7,7 @@ import {ReceptPage} from "@/components/recept-page/ReceptPage";
 import {Reservation} from "@/components/reservation/Reservation";
 import {Calories} from "@/components/calories/Calories";
 import {Reviews} from "@/components/reviews/Reviews";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Reservation />
       <Calories />
       <Reviews />
+      <Footer />
     </main>
   )
 }
