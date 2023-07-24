@@ -39,35 +39,37 @@ export function Reservation() {
           <h2 className='heading-one reservation__title'>Make a Reservation</h2>
           <p className='body-text reservation__subtitle'>Get in touch with restaurant</p>
         </div>
-        <div className='reservation__form'>
-          <input
-            className='reservation__date'
-            type="date"
-            value={selectedDate}
-            onChange={handleDateChange}
-          />
-          <select
-            className='reservation__select'
-            value={selectedOption1}
-            onChange={handleOption1Change}
-          >
-            <option value="">6:00 pm</option>
-            <option value="option1">8:00 pm</option>
-            <option value="option2">10:00 pm</option>
-            <option value="option3">11:00 pm</option>
-          </select>
-          <select
-            className='reservation__select'
-            value={selectedOption2}
-            onChange={handleOption2Change}
-          >
-            <option value="">1 Person</option>
-            <option value="option1">2 Person</option>
-            <option value="option2">3 Person</option>
-            <option value="option3">4 Person</option>
-          </select>
-        </div>
-        <button className='heading-five btn reservation__btn' title='Book Now'>Book Now</button>
+        <form className='reservation__form' action="">
+          <div className='reservation__wrapper'>
+            <input
+              className='reservation__date'
+              type="date"
+              value={selectedDate}
+              onChange={handleDateChange}
+            />
+            <select
+              className='reservation__select'
+              value={selectedOption1}
+              onChange={handleOption1Change}
+            >
+              <option value="">6:00 pm</option>
+              <option value="option1">8:00 pm</option>
+              <option value="option2">10:00 pm</option>
+              <option value="option3">11:00 pm</option>
+            </select>
+            <select
+              className='reservation__select'
+              value={selectedOption2}
+              onChange={handleOption2Change}
+            >
+              <option value="">1 Person</option>
+              <option value="option1">2 Person</option>
+              <option value="option2">3 Person</option>
+              <option value="option3">4 Person</option>
+            </select>
+          </div>
+          <button className='heading-five btn reservation__btn' title='Book Now'>Book Now</button>
+        </form>
       </div>
     </section>
   );

@@ -31,11 +31,16 @@
 
 .reservation__form {
     display: flex;
+    flex-direction: column;
+    gap: 133px;
+    width: 100%;
+}
+
+.reservation__wrapper {
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 48px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
 }
 
 .reservation__date {
@@ -76,17 +81,14 @@
 
 .reservation__btn {
     cursor: pointer;
-    display: flex;
     max-width: 344px;
     width: 100%;
     padding: 20px 46px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     border: none;
     background: var(--dark-green);
     font-family: var(--font-rufina);
     color: var(--white);
     transition: all 1s ease;
+    margin: 0 auto;
 }
 

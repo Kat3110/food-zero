@@ -68,15 +68,10 @@
 }
 
 .header__btn{
-    display: inline-flex;
     padding: 20px 46px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     border: 2px solid var(--white);
     background: transparent;
     cursor: pointer;
     font-family: var(--font-rufina);
     color: var(--white);
-    text-decoration: none;
 }
