@@ -1,4 +1,4 @@
-import './hero-header.css'
+import './hero-header.scss'
 import Image from "next/image";
 import Spices1 from '../../../public/spices1.png'
 import Spices2 from '../../../public/spices2.png'

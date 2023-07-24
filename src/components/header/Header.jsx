@@ -1,7 +1,7 @@
 "use client"
 
 import {useState} from 'react';
-import './header.css'
+import './header.scss'
 import Image from "next/image";
 import Logo from '../../../public/Logo.svg'
 

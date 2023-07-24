@@ -1,8 +1,8 @@
 .footer {
-    background: var(--dark-green);
+    background: $dark-green;
     width: 100%;
     padding: 132px 0 74px;
-    color: var(--white);
+    color: $white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@
 }
 
 .footer__logo {
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
     font-size: 68px;
     font-weight: 700;
     max-width: 188px;
@@ -72,26 +72,26 @@
 .footer__input {
     width: 100%;
     padding: 31px 40px;
-    border: 2px solid var(--white);
+    border: 2px solid $white;
     background: transparent;
-    color: var(--white);
+    color: $white;
     outline: none;
 }
 
 .footer__input::placeholder {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0.48px;
-    color: var(--white);
+    color: $white;
 }
 
 .footer__btn {
     padding: 20px 46px;
-    background: var(--green);
-    color: var(--white);
+    background: $green;
+    color: $white;
     border: none;
     outline: none;
     cursor: pointer;
@@ -105,7 +105,7 @@
 }
 
 .footer .divider {
-    border-bottom: 5px var(--white) dotted;
+    border-bottom: 5px $white dotted;
 }
 
 .footer__bottom {

@@ -1,4 +1,4 @@
-import './recept-page.css'
+import './recept-page.scss'
 import Img from '../../../public/recept.png'
 import Avatar from '../../../public/Avatar.png'
 import Avatar2 from '../../../public/Avatar1.png'

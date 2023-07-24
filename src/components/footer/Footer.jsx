@@ -1,4 +1,4 @@
-import './footer.css'
+import './footer.scss'
 import Image from "next/image";
 import Instagram from '../../../public/Icon_instagram-min.svg'
 import Facebook from '../../../public/Icon_facebook-min.svg'

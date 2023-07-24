@@ -1,4 +1,4 @@
-import './excellent-cook.css'
+import './excellent-cook.scss'
 import Image from "next/image";
 import Flower from '../../../public/Leaf.svg'
 import Men from '../../../public/men.png'

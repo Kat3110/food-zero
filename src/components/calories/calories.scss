@@ -19,13 +19,13 @@
 
 .calories__title {
     text-align: center;
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
     line-height: 120px;
 }
 
 .calories__subtitle {
     text-align: center;
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     line-height: 140%;
     letter-spacing: 0.48px;
 }

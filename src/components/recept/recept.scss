@@ -22,8 +22,8 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    background: var(--green);
-    color: var(--white);
+    background: $green;
+    color: $white;
 }
 
 .recept__container {
@@ -50,7 +50,7 @@
 .recept__item {
     display: flex;
     gap: 14px;
-    color: var(--green);
+    color: $green;
 }
 
 .recept__item:after {
@@ -70,12 +70,12 @@
 }
 
 .recept__title {
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
     line-height: 64px;
 }
 
 .recept__subtitle {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     line-height: 140%;
     letter-spacing: 0.44px;
 }
@@ -90,10 +90,10 @@
 
 .recept__link {
     text-decoration: none;
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     line-height: 140%;
     letter-spacing: 0.48px;
-    color: var(--black);
+    color: $black;
     display: flex;
     gap: 10px;
 }

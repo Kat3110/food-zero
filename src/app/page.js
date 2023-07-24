@@ -1,4 +1,3 @@
-import './home.css'
 import {HeroHeader} from "@/components/hero-header/HeroHeader";
 import {OurMenu} from "@/components/our-menu/Our-menu";
 import {ExcellentCook} from "@/components/excellent-cook/ExcellentCook";

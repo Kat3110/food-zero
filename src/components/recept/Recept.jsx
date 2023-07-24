@@ -1,4 +1,4 @@
-import './recept.css'
+import './recept.scss'
 import Image from "next/image";
 
 export function Recept({

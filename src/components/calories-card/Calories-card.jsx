@@ -1,4 +1,4 @@
-import './calories-card.css';
+import './calories-card.scss';
 import Image from "next/image";
 
 export function CaloriesCard({

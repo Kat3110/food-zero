@@ -1,26 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@300;400;700;900&family=Rufina:wght@400;700&display=swap');
 
-:root {
-    --max-width: 1920px;
-    --font-rufina: 'Rufina', serif;
-    --font-inter: 'Inter', sans-serif;
-    --font-lato: 'Lato', sans-serif;
-
-    --dark-green: rgba(35, 48, 0, 1);
-    --green: rgba(94, 102, 0, 1);
-    --light-green: rgba(156, 170, 0, 1);
-    --white-green: rgba(235, 240, 228, 1);
-    --black: rgba(0, 0, 0);
-    --dark-grey: rgba(77, 77, 77, 1);
-    --grey: rgba(176, 176, 176, 1);
-    --white: rgba(255, 255, 255);
-
-    --breakpoint-desctop: 1700px;
-    --breakpoint-laptop: 1400px;
-    --breakpoint-tablet: 1000px;
-    --breakpoint-mobile: 600px;
-}
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -30,7 +9,7 @@
 body {
     max-width: 100vw;
     overflow-x: hidden;
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
 }
 
 .content {
@@ -83,61 +62,61 @@ body {
 }
 
 .nav-item {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-weight: 700;
     font-size: 66px;
 }
 
 .nav-subitem {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-weight: 400;
     font-size: 24px;
 }
 
 .body-text {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-weight: 400;
     font-size: 24px;
 }
 
 .this-body-B {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-weight: 700;
     font-size: 24px;
 }
 
 .body-cap {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-weight: 400;
     font-size: 20px;
 }
 
 .excerpt {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-weight: 400;
     font-size: 22px;
 }
 
 .label {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-weight: 400;
     font-size: 18px;
 }
 
 .comments {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-weight: 400;
     font-size: 14px;
 }
 
 .widgets-title {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-weight: 400;
     font-size: 20px;
 }
 
 .widgets-text {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-weight: 400;
     font-size: 18px;
 }
@@ -148,23 +127,51 @@ body {
 }
 
 .btn:focus {
-    background: var(--white-green);
-    color: var(--green);
+    background: $white-green;
+    color: $green;
     opacity: 1;
-    box-shadow: inset 0 0 20px 1px var(--green);
+    box-shadow: inset 0 0 20px 1px $green;
     transition: all 0.4s ease;
 }
 
 .btn:active {
-    background: var(--dark-green);
-    color: var(--white);
-    box-shadow: inset 0 0 20px 1px var(--green);
+    background: $dark-green;
+    color: $white;
+    box-shadow: inset 0 0 20px 1px $green;
     opacity: 1;
     transition: all 0.4s ease;
 }
 
-@media (max-width: var(--breakpoint-desctop)) {
-    body {
-        background: mediumvioletred;
+
+@media (max-width: $breakpoint-laptop) {
+
+    .content {
+        padding-left: 80px;
+        padding-right: 80px;
+        max-width: 1400px;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+
+    .content {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 1000px;
+    }
+
+    .heading-five {
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: $breakpoint-mobile) {
+
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 600px;
     }
 }

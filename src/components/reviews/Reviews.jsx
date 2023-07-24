@@ -1,7 +1,7 @@
 "use client"
 import {useState} from 'react';
 import Image from "next/image";
-import './reviews.css';
+import './reviews.scss';
 import Icon from '../../../public/”.png'
 import Arrow from '../../../public/ARROW-SLIDER.png'
 import Avatar from '../../../public/AvatarAcc.jpg'

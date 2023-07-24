@@ -1,4 +1,4 @@
-import './structure.css'
+import './structure.scss'
 import Image from "next/image";
 import Fish from '../../../public/Icon_fish.svg'
 import Lemon from '../../../public/Icon_lemon.svg'

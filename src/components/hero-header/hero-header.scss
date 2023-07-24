@@ -2,8 +2,8 @@
     width: 100%;
     padding-top: 310px;
     padding-bottom: 220px;
-    color: var(--white);
-    background-color: var(--dark-green);
+    color: $white;
+    background-color: $dark-green;
 }
 
 .hero-header .content {
@@ -38,7 +38,7 @@
 }
 
 .hero-header__img-meat {
-    background: url("/hero-img.png");
+    background-image: url('/hero-img.png');
     max-width: 792px;
     width: 100%;
     height: 931px;
@@ -79,7 +79,7 @@
 
 @keyframes slide {
     0% {
-        right: 350%;
+        right: 180%;
     }
     100% {
         right: 285px;

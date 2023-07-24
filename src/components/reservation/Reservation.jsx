@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import './reservation.css';
+import './reservation.scss';
 
 function getTodayDate() {
   const today = new Date();

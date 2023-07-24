@@ -1,4 +1,4 @@
-import './price-list.css'
+import './price-list.scss'
 
 export function PriceList({
                             cost,

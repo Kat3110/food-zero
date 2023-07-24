@@ -1,4 +1,4 @@
-import './calories.css';
+import './calories.scss';
 import {CaloriesCard} from "@/components/calories-card/Calories-card";
 import Menu from '../../../public/MenuCategory.png'
 import Menu1 from '../../../public/MenuCategory1.png'

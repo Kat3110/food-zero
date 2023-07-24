@@ -1,4 +1,4 @@
-import './our-menu.css'
+import './our-menu.scss'
 import Image from "next/image";
 import Twig from '/public/twig.png'
 import {PriceList} from "@/components/price-list/PriceList";

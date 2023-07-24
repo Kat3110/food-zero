@@ -23,7 +23,7 @@
 }
 
 .reviews__title {
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
     line-height: 64px;
     overflow: hidden;
     display: -webkit-box;
@@ -58,7 +58,7 @@
     height: 170px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--white-green);
+    border: 2px solid $white-green;
 }
 
 .reviews__account div {
@@ -69,18 +69,18 @@
 }
 
 .reviews__name {
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
 }
 
 .reviews__major {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
 }
 
 .reviews__control {
     position: relative;
     display: flex;
     flex-direction: row;
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
     gap: 40px;
     align-items: center;
 }

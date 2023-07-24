@@ -1,7 +1,7 @@
 .our-menu {
     display: flex;
     position: relative;
-    color: var(--black);
+    color: $black;
     padding: 176px 0 218px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .our-menu__title {
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
     line-height: 120px;
 }
 

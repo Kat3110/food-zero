@@ -9,13 +9,13 @@
 
 .price-list__cost {
     text-align: right;
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
     line-height: 64px;
     width: 100%;
 }
 
 .price-list__title {
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
     line-height: 84px;
 }
 

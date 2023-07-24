@@ -1,5 +1,5 @@
 .reservation {
-    background: var(--white-green);
+    background: $white-green;
     padding: 237px 0 254px;
 }
 
@@ -20,13 +20,13 @@
 }
 
 .reservation__title {
-    font-family: var(--font-rufina);
+    font-family: $font-rufina;
 }
 
 .reservation__subtitle {
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     letter-spacing: 0.48px;
-    color: var(--dark-green);
+    color: $dark-green;
 }
 
 .reservation__form {
@@ -44,14 +44,14 @@
 }
 
 .reservation__date {
-    border: 1px solid var(--black);
+    border: 1px solid $black;
     display: flex;
     gap: 60px;
     padding: 30px 40px;
     max-width: 516px;
     width: 100%;
     background: transparent;
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-size: 24px;
     outline: none;
 }
@@ -61,7 +61,7 @@
     max-width: 516px;
     width: 100%;
     padding: 30px 40px;
-    font-family: var(--font-lato);
+    font-family: $font-lato;
     font-size: 24px;
     outline: none;
     -webkit-appearance: none;
@@ -72,11 +72,11 @@
 .reservation__select option {
     max-width: 516px;
     width: 100%;
-    font-family: var(--font-lato) !important;
+    font-family: $font-lato !important;
     font-size: 24px !important;
-    background:var(--white-green);
+    background: $white-green;
     border: none;
-    color: var(--dark-grey);
+    color: $dark-grey;
 }
 
 .reservation__btn {
@@ -85,9 +85,9 @@
     width: 100%;
     padding: 20px 46px;
     border: none;
-    background: var(--dark-green);
-    font-family: var(--font-rufina);
-    color: var(--white);
+    background: $dark-green;
+    font-family: $font-rufina;
+    color: $white;
     transition: all 1s ease;
     margin: 0 auto;
 }
