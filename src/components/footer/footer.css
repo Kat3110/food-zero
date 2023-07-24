@@ -113,9 +113,8 @@
     letter-spacing: 0.28px;
 }
 
-.footer__border {
-    border-top: var(--white) dotted;
-    width: 100%;
+.footer .divider {
+    border-bottom: 5px var(--white) dotted;
 }
 
 .footer__bottom {

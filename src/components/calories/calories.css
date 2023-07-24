@@ -1,8 +1,9 @@
 .calories {
-    padding: 138px 0 128px;
+    padding-top: 138px;
+    padding-bottom: 128px;
 }
 
-.calories .content {
+.calories.content {
     display: flex;
     flex-direction: column;
     gap: 126px;

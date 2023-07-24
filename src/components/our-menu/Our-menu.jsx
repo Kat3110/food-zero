@@ -1,4 +1,4 @@
-import './menu.css'
+import './our-menu.css'
 import Image from "next/image";
 import Twig from '/public/twig.png'
 import {PriceList} from "@/components/price-list/PriceList";
@@ -26,16 +26,16 @@ const cards = [
   }
 ]
 
-export function Menu() {
+export function OurMenu() {
   return (
-    <section className='menu'>
-      <Image className='menu__twig' src={Twig} alt='flower'/>
+    <section className='our-menu'>
+      <Image className='our-menu__twig' src={Twig} alt='flower'/>
       <div className='content'>
         <div>
-          <h1 className='heading-one menu__title'>Our Menu</h1>
-          <p className='body menu__subtitle'>This is a section of your menu. Give your section<br/> a brief description</p>
+          <h2 className='heading-one our-menu__title'>Our Menu</h2>
+          <p className='body-text our-menu__subtitle'>This is a section of your menu. Give your section<br/> a brief description</p>
         </div>
-        <div className='menu__list'>
+        <div className='our-menu__list'>
           {cards.map((card) => (
             <PriceList
               key={card.title}

@@ -2,6 +2,7 @@
     position: relative;
     max-width: 508px;
     width: 100%;
+    overflow: hidden;
 }
 
 .calories-card img {

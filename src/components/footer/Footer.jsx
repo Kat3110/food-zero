@@ -27,7 +27,7 @@ export default function Footer() {
         <div className='footer__subscription'>
           <h2 className='heading-five footer__title'>Never Miss a Recipe</h2>
           <div className='footer__form'>
-            <input className='body footer__input' type="text" placeholder='Email Address' />
+            <input className='body-text footer__input' type="text" placeholder='Email Address' />
             <button className='heading-five btn footer__btn'>Subscribe</button>
           </div>
           <p className='footer__subtitle widgets-text'>
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className='footer__border'></div>
+      <div className='divider'></div>
 
       <div className='footer__bottom'>
         <span className='footer__copyright'>© 2020 Zero Inc. All rights Reserved</span>

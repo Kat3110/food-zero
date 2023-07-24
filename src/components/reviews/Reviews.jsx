@@ -44,9 +44,7 @@ export function Reviews() {
   }
 
   return (
-    <>
-      <div className='reviews'>
-        <div className='content'>
+      <section className='reviews content'>
           <div className='reviews__slide'>
             {slides.map((slide, index) => (
               <div className={index === currentSlide ? 'reviews__current' : 'reviews__item'} key={slide.id}>
@@ -80,8 +78,6 @@ export function Reviews() {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-    </>
+      </section>
   );
 }

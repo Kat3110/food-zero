@@ -33,11 +33,11 @@ export function Reservation() {
   };
 
   return (
-    <div className='reservation'>
+    <section className='reservation'>
       <div className='content'>
         <div className='reservation__text'>
-          <h1 className='heading-one reservation__title'>Make a Reservation</h1>
-          <p className='body reservation__subtitle'>Get in touch with restaurant</p>
+          <h2 className='heading-one reservation__title'>Make a Reservation</h2>
+          <p className='body-text reservation__subtitle'>Get in touch with restaurant</p>
         </div>
         <div className='reservation__form'>
           <input
@@ -69,6 +69,6 @@ export function Reservation() {
         </div>
         <button className='heading-five btn reservation__btn' title='Book Now'>Book Now</button>
       </div>
-    </div>
+    </section>
   );
 }

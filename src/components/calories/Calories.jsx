@@ -22,11 +22,11 @@ const cards = [
 export function Calories() {
 
   return (
-    <div className='calories'>
-      <div className='content'>
+    <section className='calories content'>
+
         <div className='calories__text'>
-          <h1 className='heading-one calories__title'>Calories Energy<br/> Balance</h1>
-          <p className='body calories__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h2 className='heading-one calories__title'>Calories Energy<br/> Balance</h2>
+          <p className='body-text calories__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div className='calories__card'>
           {cards.map((card) => (
@@ -37,7 +37,6 @@ export function Calories() {
             />
           ))}
         </div>
-      </div>
-    </div>
+    </section>
   );
 }

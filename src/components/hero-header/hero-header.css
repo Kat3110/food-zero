@@ -14,10 +14,7 @@
 }
 
 .hero-header__top {
-    display: flex;
     width: 100%;
-    align-items: start;
-    flex-direction: row;
     min-height: 1055px;
     position: relative;
 }
@@ -70,7 +67,7 @@
     }
 }
 
-.hero-header__img {
+.hero-header__img-spice {
     display: flex;
     gap: 44px;
     z-index: 3;

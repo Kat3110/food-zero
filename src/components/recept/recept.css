@@ -1,12 +1,3 @@
-.recept {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    padding: 130px 0 105px;
-}
-
 .recept__card {
     display: flex;
     flex-direction: column;
@@ -56,19 +47,19 @@
     list-style: none;
 }
 
-.recept__list li {
+.recept__item {
     display: flex;
     gap: 14px;
     color: var(--green);
 }
 
-.recept__list li:after {
+.recept__item:after {
     content: '·';
     display: block;
     flex-shrink: 0;
 }
 
-.recept__list li:last-of-type:after {
+.recept__item:last-of-type:after {
     display: none;
 }
 
@@ -81,11 +72,6 @@
 .recept__title {
     font-family: var(--font-rufina);
     line-height: 64px;
-}
-
-.recept__border {
-    width: 100%;
-    border-bottom: black dotted;
 }
 
 .recept__subtitle {

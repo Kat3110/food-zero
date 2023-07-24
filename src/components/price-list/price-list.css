@@ -12,7 +12,6 @@
     font-family: var(--font-rufina);
     line-height: 64px;
     width: 100%;
-    border-bottom: dotted;
 }
 
 .price-list__title {

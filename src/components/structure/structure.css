@@ -4,7 +4,8 @@
     gap: 60px;
     align-items: center;
     justify-content: center;
-    padding: 207px 0 190px;
+    padding-top: 207px;
+    padding-bottom: 190px;
 }
 
 .structure__card {

@@ -9,8 +9,9 @@ export function PriceList({
     <>
       <div className='price-list'>
         <span className='heading-four price-list__cost'>{cost}</span>
-        <h1 className='heading-three price-list__title'>{title}</h1>
-        <p className='body price-list__subtitle'>{subtitle}</p>
+        <div className='divider'></div>
+        <h3 className='heading-three price-list__title'>{title}</h3>
+        <p className='body-text price-list__subtitle'>{subtitle}</p>
       </div>
     </>
   )

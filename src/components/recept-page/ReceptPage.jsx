@@ -30,8 +30,7 @@ const cards = [
 
 export function ReceptPage() {
   return (
-    <>
-      <div className='recept content'>
+      <section className='recept-page content'>
         {cards.map((card) => (
           <Recept
             key={card.nickname}
@@ -45,7 +44,6 @@ export function ReceptPage() {
             subtitle={card.subtitle}
           />
         ))}
-      </div>
-    </>
+      </section>
   )
 }
