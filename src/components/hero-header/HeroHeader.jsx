@@ -12,7 +12,7 @@ export function HeroHeader() {
       <div className='content'>
         <div className='hero-header__top'>
           <div className='hero-header__text'>
-            <h1 className='large-title hero-header__title'>Healthy Eating <br/>is important <br/>part of lifestyle
+            <h1 className='large-title hero-header__title'>Healthy Eating is important part of lifestyle
             </h1>
             <p className='body-text hero-header__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit. Neque congue
               arcu

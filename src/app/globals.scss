@@ -150,6 +150,12 @@ body {
         padding-right: 80px;
         max-width: 1400px;
     }
+
+    .large-title {
+        font-weight: 600;
+        font-size: 100px;
+    }
+
 }
 
 @media (max-width: $breakpoint-tablet) {
@@ -160,10 +166,31 @@ body {
         max-width: 1000px;
     }
 
+    .large-title {
+        font-weight: 500;
+        font-size: 60px;
+    }
+
+    .heading-one {
+        font-weight: 600;
+        font-size: 68px;
+    }
+
+    .heading-three {
+        font-weight: 600;
+        font-size: 38px;
+    }
+
     .heading-five {
         font-weight: 600;
         font-size: 20px;
     }
+
+    .body-text {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
 }
 
 
@@ -173,5 +200,23 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         max-width: 600px;
+    }
+
+    .large-title {
+        font-size: 36px;
+    }
+
+    .heading-one {
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    .heading-four {
+        font-size: 30px;
+    }
+
+    .body-text {
+        font-weight: 300;
+        font-size: 19px;
     }
 }

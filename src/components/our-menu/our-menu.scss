@@ -36,3 +36,22 @@
     gap: 108px 60px;
     z-index: 3;
 }
+
+@media (max-width: $breakpoint-tablet) {
+
+    .our-menu .content {
+        gap: 78px;
+    }
+
+    .our-menu {
+        padding: 100px 0 118px;
+    }
+
+    .our-menu__title {
+        line-height: normal;
+    }
+
+    .our-menu__list {
+        gap: 40px;
+    }
+}

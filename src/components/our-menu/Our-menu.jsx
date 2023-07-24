@@ -31,7 +31,7 @@ export function OurMenu() {
     <section className='our-menu'>
       <Image className='our-menu__twig' src={Twig} alt='flower'/>
       <div className='content'>
-        <div>
+        <div className='our-menu__text'>
           <h2 className='heading-one our-menu__title'>Our Menu</h2>
           <p className='body-text our-menu__subtitle'>This is a section of your menu. Give your section<br/> a brief description</p>
         </div>
