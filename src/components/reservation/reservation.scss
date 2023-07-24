@@ -21,6 +21,7 @@
 
 .reservation__title {
     font-family: $font-rufina;
+    text-align: center;
 }
 
 .reservation__subtitle {
@@ -41,6 +42,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 48px;
+    justify-content: center;
 }
 
 .reservation__date {
@@ -92,3 +94,27 @@
     margin: 0 auto;
 }
 
+@media (max-width: $breakpoint-laptop) {
+
+    .reservation__btn {
+        max-width: 516px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .reservation {
+        padding: 67px 0 54px;
+    }
+
+    .reservation .content {
+        gap: 40px;
+    }
+
+    .reservation__form {
+        gap: 40px;
+    }
+
+    .reservation__btn {
+        max-width: 100%;
+    }
+}

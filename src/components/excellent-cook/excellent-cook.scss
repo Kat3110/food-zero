@@ -1,105 +1,165 @@
 .excellent-cook {
-    color: black;
-    background: var(--white-green);
-    padding: 222px 0 0;
-    overflow: hidden;
+  color: black;
+  background: var(--white-green);
+  padding: 222px 0 0;
+  overflow: hidden;
 }
 
 .excellent-cook .content {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
 }
 
 .excellent-cook__text {
-    display: flex;
-    flex-direction: column;
-    max-width: 649px;
-    width: 100%;
-    gap: 18px;
+  display: flex;
+  flex-direction: column;
+  max-width: 649px;
+  width: 100%;
+  gap: 18px;
 }
 
 .excellent-cook__title {
-    font-family: var(--font-rufina);
-    line-height: 120px;
+  font-family: var(--font-rufina);
+  line-height: 120px;
 }
 
 .excellent-cook__subtitle {
-    line-height: 140%;
-    letter-spacing: 0.48px;
+  line-height: 140%;
+  letter-spacing: 0.48px;
 }
 
 .excellent-cook__flower {
-    max-width: 456px;
-    width: 100%;
-    max-height: 464px;
-    height: 100%;
-    transform: rotate(-23deg);
-    position: absolute;
-    bottom: 10px;
-    right: 170px;
+  max-width: 456px;
+  width: 100%;
+  max-height: 464px;
+  height: 100%;
+  transform: rotate(-23deg);
+  position: absolute;
+  bottom: 10px;
+  right: 170px;
 }
 
 .excellent-cook__left {
-    position: relative;
+  position: relative;
 }
 
 .excellent-cook__flower-left {
-    position: absolute;
-    max-width: 366px;
-    width: 100%;
-    max-height: 372px;
-    height: 100%;
-    top: -115px;
-    left: -38px;
-    rotate: 91deg;
+  position: absolute;
+  max-width: 366px;
+  width: 100%;
+  max-height: 372px;
+  height: 100%;
+  top: -115px;
+  left: -38px;
+  rotate: 91deg;
 }
 
 .excellent-cook__men {
-    object-fit: cover;
-    z-index: 5;
-    position: inherit;
+  object-fit: contain;
+  z-index: 5;
+  position: inherit;
 }
 
 
 @media (max-width: $breakpoint-desktop) {
 
-    .excellent-cook {
-        color: black;
-        background: var(--white-green);
-        padding: 100px 0 0;
-    }
+  .excellent-cook {
+    color: black;
+    background: var(--white-green);
+    padding: 110px 0 0;
+  }
 
-    .excellent-cook .content {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+  .excellent-cook .content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-    .excellent-cook__text {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-        max-width: 100%;
-    }
+  .excellent-cook__text {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    max-width: 100%;
+  }
 
-    .excellent-cook__flower-left {
-        position: relative;
-        top: 0;
-        left: 50px;
-        max-width: 300px;
-        max-height: 350px;
-    }
+  .excellent-cook__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .excellent-cook__flower {
-        bottom: 0;
-        top: 300px;
-        right: 163px;
-        max-width: 381px;
-        max-height: 410px;
-    }
+  .excellent-cook__flower-left {
+    position: relative;
+    top: 0;
+    margin: -240px auto 0 10px;
+  }
 
-    .excellent-cook__men {
-        margin: 0 10% 0;
-    }
+  .excellent-cook__flower {
+    bottom: 0;
+    top: 300px;
+    right: 163px;
+    max-width: 381px;
+    max-height: 410px;
+  }
+
+  .excellent-cook__men {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+
+  .excellent-cook__left {
+    gap: 70px;
+  }
+
+  .excellent-cook__subtitle {
+    line-height: normal;
+    font-weight: 800;
+  }
+
+  .excellent-cook__flower-left {
+    max-width: 200px;
+    width: 100%;
+    height: max-content;
+    opacity: 0.6;
+  }
+
+  .excellent-cook__flower {
+    bottom: 0;
+    top: 150px;
+    right: 62px;
+    max-width: 201px;
+    height: max-content;
+    opacity: 0.6;
+  }
+
+  .excellent-cook__men {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+  }
+}
+
+
+@media (max-width: $breakpoint-mobile) {
+
+  .excellent-cook__title {
+    line-height: normal;
+  }
+
+  .excellent-cook__flower-left {
+    margin: -240px -55px 0 auto;
+  }
+
+  .excellent-cook__flower {
+    display: none;
+  }
+
+  .excellent-cook {
+    color: black;
+    background: var(--white-green);
+    padding: 40px 0 0;
+  }
 }

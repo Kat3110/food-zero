@@ -55,3 +55,10 @@
         gap: 40px;
     }
 }
+
+@media (max-width: $breakpoint-mobile) {
+
+    .our-menu {
+        padding: 60px 0 50px;
+    }
+}

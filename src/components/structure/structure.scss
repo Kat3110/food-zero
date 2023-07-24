@@ -6,6 +6,7 @@
     justify-content: center;
     padding-top: 207px;
     padding-bottom: 190px;
+    flex-wrap: wrap;
 }
 
 .structure__card {
@@ -52,3 +53,26 @@
     text-align: center;
 }
 
+
+@media (max-width: $breakpoint-mobile) {
+
+    .structure {
+        gap: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .structure__icon {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .structure__icon img{
+        max-width: 134px;
+        height: 134px;
+    }
+
+    .structure__card {
+        gap: 20px;
+    }
+}
