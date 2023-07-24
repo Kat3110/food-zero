@@ -67,7 +67,7 @@ export function Reservation() {
             <option value="option3">4 Person</option>
           </select>
         </div>
-        <button className='heading-five reservation__btn' title='Book Now'>Book Now</button>
+        <button className='heading-five btn reservation__btn' title='Book Now'>Book Now</button>
       </div>
     </div>
   );

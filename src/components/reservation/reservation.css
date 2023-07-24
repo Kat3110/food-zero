@@ -90,17 +90,3 @@
     transition: all 1s ease;
 }
 
-.reservation__btn:hover{
-    opacity: 0.8;
-}
-
-.reservation__btn:active {
-    background: var(--light-green);
-    color: var(--dark-green);
-}
-
-.reservation__btn:focus {
-    box-shadow: inset 0 0 14px 2px var(--black);
-    opacity: 1;
-}
-

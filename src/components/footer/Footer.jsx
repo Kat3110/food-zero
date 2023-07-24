@@ -28,12 +28,11 @@ export default function Footer() {
           <h2 className='heading-five footer__title'>Never Miss a Recipe</h2>
           <div className='footer__form'>
             <input className='body footer__input' type="text" placeholder='Email Address' />
-            <button className='heading-five footer__btn'>Subscribe</button>
+            <button className='heading-five btn footer__btn'>Subscribe</button>
           </div>
           <p className='footer__subtitle widgets-text'>
             Join our subscribers and get best recipe delivered each week!
           </p>
-
         </div>
       </div>
 
