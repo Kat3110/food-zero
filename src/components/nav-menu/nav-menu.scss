@@ -1,30 +1,43 @@
 .nav-menu {
   background: url("../../../public/Navigation-FullscreenCover.png");
   position: fixed;
-  transform: translateY(-100%);
   left: 0;
   right: 0;
   bottom: 0;
+  transform: translateY(-100%);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
   height: 100%;
-  z-index: 1000;
+  z-index: -2;
 }
 
 .nav-menu-open {
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   transform: translateY(0);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 1;
   overflow: hidden;
+  z-index: 10000;
+}
+
+.nav-menu:not(.nav-menu-open) {
+  transition-delay: 0.2s;
+}
+
+.nav-menu__close {
+  position: relative;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+}
+
+.nav-menu__close:hover {
+  opacity: 0.6;
 }
 
 .nav-menu__line {
-  width: 100%;
   background: $white;
   transition: transform 0.3s ease;
-  position: relative;
-  cursor: pointer;
 }
 
 .nav-menu__line-1 {
@@ -45,4 +58,72 @@
   position: absolute;
   top: 24px;
   left: 10px;
+}
+
+.nav-menu__box {
+  padding: 130px 180px 0 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.nav-menu__links {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.nav-menu__links a {
+  text-decoration: none;
+  color: $white;
+  font-family: $font-rufina;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  text-transform: uppercase;
+}
+
+.nav-menu__links a:before {
+  content: '•';
+  display: flex;
+  font-size: 28px;
+}
+
+.nav-menu__links a:hover {
+  color: $green;
+}
+
+.nav-menu__contact {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  max-width: 297px;
+  width: 100%;
+}
+
+.nav-menu__contact .divider {
+  border-bottom: 5px dotted $white;
+  margin-bottom: 38px;
+}
+
+.nav-menu__date {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.nav-menu__connection a,
+.nav-menu__map {
+  text-decoration: none;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-menu__social {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
 }
