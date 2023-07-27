@@ -43,6 +43,7 @@ export function Reservation() {
           <div className='reservation__wrapper'>
             <input
               className='reservation__date'
+              aria-label="date"
               type="date"
               value={selectedDate}
               onChange={handleDateChange}

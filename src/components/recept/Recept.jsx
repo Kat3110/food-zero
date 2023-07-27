@@ -27,7 +27,7 @@ export function Recept({
               </ul>
             </div>
             <div className='recept__text'>
-              <h4 className='heading-four recept__title'>{title}</h4>
+              <h2 className='heading-four recept__title'>{title}</h2>
               <div className='divider'></div>
               <p className='body-text recept__subtitle'>{subtitle}</p>
             </div>
