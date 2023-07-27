@@ -5,11 +5,12 @@ import './header.scss'
 import Image from "next/image";
 import Logo from '../../../public/Logo.svg'
 
-export function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+export function Header({ isOpen, onMenuToggle }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleClick = () => {
-    setIsOpen(!isOpen);
+    setIsMenuOpen(true);
+    onMenuToggle(false);
   };
   return (
     <header className='header content'>
