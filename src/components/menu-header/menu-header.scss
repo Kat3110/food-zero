@@ -1,0 +1,25 @@
+.menu-header {
+  width: 100%;
+  height: 100%;
+  background-image: url("/Header-min.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 350px;
+  padding-bottom: 328px;
+  color: $white;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .menu-header {
+    padding-top: 250px;
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .menu-header {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+}

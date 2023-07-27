@@ -35,8 +35,8 @@ export function NavMenu({isOpen, onMenuToggle}) {
           <Link
             className="nav-item"
             href={{
-              pathname: '/Menu',
-              name: 'Menu',
+              pathname: '/new-menu',
+              name: 'new-menu',
             }}
           >
             Menu
