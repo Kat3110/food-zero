@@ -3,7 +3,7 @@ import './globals.scss'
 
 import {Header} from "@/components/header/Header";
 import {NavMenu} from "@/components/nav-menu/Nav-menu";
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 export const metadata = {
   title: 'Food Zero',
@@ -14,6 +14,11 @@ export default function RootLayout({children}) {
 
   const handleMenuToggle = (isOpen) => {
     setIsMenuOpen(!isOpen);
+    if (isMenuOpen) {
+      document.body.style.overflow = 'auto';
+    } else {
+      document.body.style.overflow = 'hidden';
+    }
   };
 
   return (
