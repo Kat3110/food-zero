@@ -164,6 +164,10 @@
 
 
 @media (max-width: $breakpoint-mobile) {
+    .footer {
+        padding: 62px 0 34px;
+    }
+
     .footer__title {
         margin-bottom: 25px;
     }
@@ -174,8 +178,18 @@
     }
 
     .footer__top {
+        grid-template-columns: 35% 60%;
         padding-bottom: 30px;
         gap: 20px;
+    }
+
+    .footer__input {
+        padding: 18px 40px;
+    }
+
+    .footer__input::placeholder {
+        font-size: 14px;
+        line-height: normal;
     }
 
     .footer__bottom {

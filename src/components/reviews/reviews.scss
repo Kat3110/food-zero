@@ -119,6 +119,11 @@
 
 @media (max-width: $breakpoint-laptop) {
 
+    .reviews {
+        padding-top: 30px;
+        padding-bottom: 90px;
+    }
+
     .reviews__slide {
         padding: 0;
     }
@@ -142,5 +147,13 @@
     .reviews__img {
         width: 120px;
         height: 120px;
+    }
+
+    .reviews__title {
+        line-height: normal;
+    }
+
+    .reviews__current {
+        gap: 40px;
     }
 }

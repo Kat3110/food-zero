@@ -117,4 +117,18 @@
     .reservation__btn {
         max-width: 100%;
     }
+
+    .reservation__wrapper {
+        gap: 20px;
+    }
+
+    .reservation__date {
+        padding: 15px 40px;
+        font-size: 20px;
+    }
+
+    .reservation__select {
+        padding: 17px 40px;
+        font-size: 20px;
+    }
 }
