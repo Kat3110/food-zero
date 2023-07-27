@@ -41,16 +41,16 @@ export default function Footer() {
         <div className='footer__bottom'>
           <div className='footer__copyright'>© 2020 Zero Inc. All rights Reserved</div>
           <div className='footer__social'>
-            <a className='footer__link' href="">
+            <a className='footer__link' href="https://www.instagram.com/">
               <Image src={Instagram} alt='Instagram'></Image>
             </a>
-            <a className='footer__link' href="">
+            <a className='footer__link' href="https://twitter.com/">
               <Image src={Twitter} alt='Twitter'></Image>
             </a>
-            <a className='footer__link' href="">
+            <a className='footer__link' href="https://facebook.com/">
               <Image src={Facebook} alt='Facebook'></Image>
             </a>
-            <a className='footer__link' href="">
+            <a className='footer__link' href="https://www.youtube.com/">
               <Image src={Youtube} alt='Youtube'></Image>
             </a>
           </div>
