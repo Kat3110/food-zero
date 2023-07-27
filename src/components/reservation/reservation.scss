@@ -56,6 +56,7 @@
     font-family: $font-lato;
     font-size: 24px;
     outline: none;
+    cursor: pointer;
 }
 
 .reservation__select {
@@ -69,6 +70,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .reservation__select option {

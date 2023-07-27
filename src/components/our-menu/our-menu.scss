@@ -27,14 +27,12 @@
     line-height: 140%;
     letter-spacing: 0.48px;
 }
-
 .our-menu__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    display: grid;
     gap: 108px 60px;
     z-index: 3;
+    grid-template-columns: 48% 48%;
+    justify-content: center;
 }
 
 @media (max-width: $breakpoint-tablet) {
@@ -50,9 +48,13 @@
     .our-menu__title {
         line-height: normal;
     }
+}
 
+@media (max-width: 1600px) {
     .our-menu__list {
-        gap: 40px;
+        grid-gap: 40px 0;
+        grid-template-columns: 100%;
+        justify-content: start;
     }
 }
 

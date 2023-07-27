@@ -12,6 +12,7 @@ Zero Food - это веб-сайт ресторана.
 * React
 * Next.js
 * CSS-анимация
+* React-spring
 
 ## Установка:
 
