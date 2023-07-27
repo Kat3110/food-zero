@@ -1,21 +1,24 @@
 .nav-menu {
-  background: url("../../../public/Navigation-FullscreenCover.png");
+  background-image: url("../../../public/Navigation-FullscreenCover.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  transform: translateY(-100%);
-  transition: transform 0.5s ease-in-out;
+  top: -100%;
+  transition: top 0.5s ease-in-out;
   width: 100%;
   height: 100%;
   z-index: 10000;
 }
 
 .nav-menu-open {
-  transform: translateY(0);
-  transition: transform 0.5s ease-in-out;
+  top: 0;
+  transition: top 0.5s ease-in-out;
   overflow: hidden;
-  z-index: 10000
+  z-index: 10000;
 }
 
 .nav-menu:not(.nav-menu-open) {
@@ -144,6 +147,9 @@
     flex-wrap: wrap;
     gap: 60px;
   }
+  .nav-menu__contact {
+    display: none;
+  }
 }
 
 @media (max-width: $breakpoint-mobile) {
@@ -151,3 +157,9 @@
     padding: 70px 20px 0 40px;
   }
 }
+
+//@media (max-width: 655px) {
+//  .nav-menu__contact {
+//    display: none;
+//  }
+//}
