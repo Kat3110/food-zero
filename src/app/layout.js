@@ -5,9 +5,6 @@ import {Header} from "@/components/header/Header";
 import {NavMenu} from "@/components/nav-menu/Nav-menu";
 import {useState, useEffect} from 'react';
 
-export const metadata = {
-  title: 'Food Zero',
-}
 
 export default function RootLayout({children}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,6 +22,7 @@ export default function RootLayout({children}) {
     <html lang="en">
       <link rel='icon' href='orangeLink.svg'/>
       <meta name="description" content='Healthy food restaurant' />
+      <title>Food Zero</title>
       <body>
         <NavMenu isOpen={isMenuOpen} onMenuToggle={handleMenuToggle} />
         <Header isOpen={isMenuOpen} onMenuToggle={handleMenuToggle} />
