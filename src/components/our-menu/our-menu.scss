@@ -33,6 +33,7 @@
     z-index: 3;
     grid-template-columns: 48% 48%;
     justify-content: center;
+    overflow: hidden;
 }
 
 @media (max-width: $breakpoint-tablet) {
