@@ -1,0 +1,137 @@
+.starters {
+  width: 100%;
+}
+
+.starters .content {
+  display: flex; position: relative;
+  flex-direction: column;
+  gap: 120px;
+  padding-top: 122px;
+  padding-bottom: 140px;
+}
+
+.starters__blueberry {
+  position: absolute;
+  top: -30px;
+  right: 18px;
+  z-index: -1;
+}
+
+.starters__avocado {
+  position: absolute;
+  top: 30px;
+  right: 38%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.starters__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.starters__title {
+  line-height: 120px;
+}
+
+.starters__subtitle {
+  font-family: $font-lato;
+  line-height: 33px;
+  letter-spacing: 0.48px;
+}
+
+.starters__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+}
+
+.starters__content-revers {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 60px;
+}
+
+.starters__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.starters__list .price-list {
+  max-width: 100%;
+}
+
+@media (max-width: $breakpoint-desktop) {
+
+  .starters__blueberry {
+    opacity: 0.2;
+  }
+
+  .starters__content,
+  .starters__content-revers {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: $breakpoint-laptop) {
+
+  .starters .content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    gap: 90px;
+  }
+
+  .starters__subtitle {
+    font-weight: 400;
+  }
+
+  .starters__blueberry {
+    right: 0;
+    height: 320px;
+  }
+
+  .starters__avocado {
+    top: -72px;
+    right: 0;
+    //width: 190px;
+    //height: 190px;
+  }
+
+  .starters__title {
+    line-height: normal;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+
+  .starters .content {
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .starters__blueberry {
+    right: 0;
+    width: 295px;
+    height: 250px;
+  }
+
+  .starters__avocado {
+    top: -40px;
+    width: 265px;
+    height: 250px;
+  }
+
+  .starters__content,
+  .starters__content-revers{
+    gap: 30px;
+  }
+}
