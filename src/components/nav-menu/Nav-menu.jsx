@@ -10,14 +10,17 @@ import Youtube from '../../../public/Icon_youtube-min.svg';
 
 const links = [
   {
+    id: 1,
     href: '/',
     name: 'Home'
   },
   {
+    id: 2,
     href: '/new-menu',
     name: 'Menu'
   },
   {
+    id: 3,
     href: '/contact',
     name: 'Contact'
   },
@@ -44,6 +47,7 @@ export function NavMenu({isOpen, onMenuToggle}) {
             <Link
               className="nav-item"
               href={link.href}
+              key={link.id}
               onClick={handleMenuClose}
             >
               {link.name}

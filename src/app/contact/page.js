@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <main className="main">
       <ContactHeader />
-      {/*<ContactPlace />*/}
+      <ContactPlace />
       <Footer/>
     </main>
   )

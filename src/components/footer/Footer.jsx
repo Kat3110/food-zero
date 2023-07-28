@@ -15,10 +15,10 @@ export default function Footer() {
           <div className='footer__contacts'>
             <h3 className='heading-five footer__title'>Contact</h3>
             <div className='widgets-text footer__links'>
-              <a href="tel:+1+86852346000">+1+86 852 346 000</a>
-              <a href="mailto:info@foodzero.com">info@foodzero.com</a>
+              <a target="_blank" href="tel:+1+86852346000">+1+86 852 346 000</a>
+              <a target="_blank" href="mailto:info@foodzero.com">info@foodzero.com</a>
             </div>
-            <a className='widgets-text footer__map'
+            <a target="_blank" className='widgets-text footer__map'
                href="https://www.waze.com/en/live-map/directions/us/ca/los-angeles/1959-s-sepulveda-blvd?place=EjExOTU5IFMgU2VwdWx2ZWRhIEJsdmQsIExvcyBBbmdlbGVzLCBDQSA5MDAyNSwgVVNBIjESLwoUChIJZ6ni5nW7woARuwuOYCmN0j0Qpw8qFAoSCRvd0P9cusKAETmBZ6QcUSze">
               1959 Sepulveda Blvd. Culver City, CA, 90230
             </a>
@@ -41,16 +41,16 @@ export default function Footer() {
         <div className='footer__bottom'>
           <div className='footer__copyright'>© 2020 Zero Inc. All rights Reserved</div>
           <div className='footer__social'>
-            <a className='footer__link' href="https://www.instagram.com/">
+            <a target="_blank" className='footer__link' href="https://www.instagram.com/">
               <Image src={Instagram} alt='Instagram'></Image>
             </a>
-            <a className='footer__link' href="https://twitter.com/">
+            <a target="_blank" className='footer__link' href="https://twitter.com/">
               <Image src={Twitter} alt='Twitter'></Image>
             </a>
-            <a className='footer__link' href="https://facebook.com/">
+            <a target="_blank" className='footer__link' href="https://facebook.com/">
               <Image src={Facebook} alt='Facebook'></Image>
             </a>
-            <a className='footer__link' href="https://www.youtube.com/">
+            <a target="_blank" className='footer__link' href="https://www.youtube.com/">
               <Image src={Youtube} alt='Youtube'></Image>
             </a>
           </div>
