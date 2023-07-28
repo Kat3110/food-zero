@@ -3,7 +3,7 @@ import './globals.scss'
 
 import {Header} from "@/components/header/Header";
 import {NavMenu} from "@/components/nav-menu/Nav-menu";
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 
 export default function RootLayout({children}) {

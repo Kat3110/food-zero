@@ -57,13 +57,15 @@
     font-size: 24px;
     outline: none;
     cursor: pointer;
+    color: $black
 }
 
 .reservation__select {
     display: flex;
+    border: 1px solid $black;
     max-width: 516px;
     width: 100%;
-    padding: 30px 40px;
+    padding: 32px 40px;
     font-family: $font-lato;
     font-size: 24px;
     outline: none;
@@ -71,6 +73,7 @@
     -moz-appearance: none;
     background: transparent;
     cursor: pointer;
+    color: $black
 }
 
 .reservation__select option {
@@ -94,6 +97,7 @@
     color: $white;
     transition: all 1s ease;
     margin: 0 auto;
+
 }
 
 @media (max-width: $breakpoint-laptop) {
@@ -130,7 +134,7 @@
     }
 
     .reservation__select {
-        padding: 17px 40px;
+        padding: 16px 40px;
         font-size: 20px;
     }
 }

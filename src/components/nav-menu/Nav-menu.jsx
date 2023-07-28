@@ -22,12 +22,12 @@ export function NavMenu({isOpen, onMenuToggle}) {
         <div className="nav-menu__line nav-menu__line-2"></div>
       </div>
       <div className="nav-menu__box">
-        <div className="nav-menu__links">
+        <divhome className="nav-menu__links">
           <Link
             className="nav-item"
             href={{
               pathname: '/home',
-              name: 'Home'
+              name: 'home'
             }}
           >
             Home
@@ -68,7 +68,7 @@ export function NavMenu({isOpen, onMenuToggle}) {
           >
             Contact
           </Link>
-        </div>
+        </divhome>
         <div className='nav-menu__contact'>
           <h2 className='heading-five nav-menu__title'>Contact</h2>
           <div className="divider"></div>
