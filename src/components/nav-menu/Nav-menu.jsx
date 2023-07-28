@@ -8,13 +8,30 @@ import Twitter from '../../../public/Icon_twitter-min.svg';
 import Facebook from '../../../public/Icon_facebook-min.svg';
 import Youtube from '../../../public/Icon_youtube-min.svg';
 
+const links = [
+  {
+    href: '/',
+    name: 'Home'
+  },
+  {
+    href: '/new-menu',
+    name: 'Menu'
+  },
+  {
+    href: '/contact',
+    name: 'Contact'
+  },
+]
+
 export function NavMenu({isOpen, onMenuToggle}) {
+
   const [isMenuOpen, setIsMenuOpen] = useState(isOpen);
 
   const handleMenuClose = () => {
     setIsMenuOpen(false);
     onMenuToggle(true);
   };
+
   return (
     <section className={`nav-menu ${isOpen ? 'nav-menu-open' : ''}`}>
       <div className="nav-menu__close" onClick={handleMenuClose}>
@@ -22,53 +39,17 @@ export function NavMenu({isOpen, onMenuToggle}) {
         <div className="nav-menu__line nav-menu__line-2"></div>
       </div>
       <div className="nav-menu__box">
-        <divhome className="nav-menu__links">
-          <Link
-            className="nav-item"
-            href={{
-              pathname: '/home',
-              name: 'home'
-            }}
-          >
-            Home
-          </Link>
-          <Link
-            className="nav-item"
-            href={{
-              pathname: '/new-menu',
-              name: 'new-menu',
-            }}
-          >
-            Menu
-          </Link>
-          <Link
-            className="nav-item"
-            href={{
-              pathname: '/blogs',
-              name: 'Blogs',
-            }}
-          >
-            Blogs
-          </Link>
-          <Link
-            className="nav-item"
-            href={{
-              pathname: '/about',
-              name: 'About',
-            }}
-          >
-            About
-          </Link>
-          <Link
-            className="nav-item"
-            href={{
-              pathname: '/contact',
-              name: 'Contact',
-            }}
-          >
-            Contact
-          </Link>
-        </divhome>
+        <div className="nav-menu__links">
+          {links.map((link) => (
+            <Link
+              className="nav-item"
+              href={link.href}
+              onClick={handleMenuClose}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
         <div className='nav-menu__contact'>
           <h2 className='heading-five nav-menu__title'>Contact</h2>
           <div className="divider"></div>
@@ -98,7 +79,6 @@ export function NavMenu({isOpen, onMenuToggle}) {
           </div>
         </div>
       </div>
-
     </section>
   )
 }
