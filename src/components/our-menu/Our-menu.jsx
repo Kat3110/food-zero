@@ -36,7 +36,7 @@ export function OurMenu() {
     triggerOnce: true,
   });
 
-  const trail = useTrail(cards.length, {
+  const trail = useTrail(cards.length,  {
     opacity: inView ? 1 : 0,
     transform: inView ? 'translateX(0)' : 'translateX(70px)',
     config: {
