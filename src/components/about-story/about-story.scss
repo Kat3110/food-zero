@@ -1,0 +1,102 @@
+.about-story {
+  padding-top: 218px;
+  padding-bottom: 118px;
+  display: flex;
+  align-items: flex-end;
+  gap: 50px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.about-story.content:before {
+  content: '';
+  background: url("../../../public/Tomato.svg");
+  position: absolute;
+  top: 124px;
+  left: 696px;
+  max-width: 321px;
+  max-height: 272px;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about-story__text {
+  margin-bottom: 94px;
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 664px;
+}
+
+.about-story__img {
+  width: 100%;
+  max-width: 792px;
+  display: block;
+}
+
+@media (max-width: $breakpoint-desktop) {
+
+  .about-story.content:before {
+    content: '';
+    top: 100px;
+    left: 300px;
+  }
+}
+
+@media (max-width: $breakpoint-laptop) {
+  .about-story {
+    padding-top: 160px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .about-story.content:before {
+    content: "";
+    top: 52px;
+    left: revert;
+    right: 50px;
+  }
+
+  .about-story__text {
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  .about-story__img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .about-story {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 30px;
+  }
+
+  .about-story.content:before {
+    content: "";
+    top: 0;
+    left: revert;
+    right: 50px;
+    max-width: 157px;
+    max-height: 134px;
+  }
+
+  .about-story__text {
+    gap: 10px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+
+  .about-story.content:before {
+    content: "";
+    opacity: 0.2;
+  }
+}
