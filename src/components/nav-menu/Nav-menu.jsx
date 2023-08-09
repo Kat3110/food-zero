@@ -24,6 +24,11 @@ const links = [
     href: '/contact',
     name: 'Contact'
   },
+  {
+    id: 4,
+    href: '/about',
+    name: 'About'
+  },
 ]
 
 export function NavMenu({isOpen, onMenuToggle}) {

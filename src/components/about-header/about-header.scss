@@ -1,0 +1,49 @@
+.about-header {
+  width: 100%;
+  height: 100%;
+  background-image: url("/About.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 410px;
+  padding-bottom: 372px;
+  color: $white;
+}
+
+.about-header .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.about-header__text {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  max-width: 915px;
+  width: 100%;
+}
+
+
+
+
+
+@media (max-width: $breakpoint-tablet) {
+  .about-header {
+    padding-top: 250px;
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .about-header {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  .about-header__text {
+    gap: 20px;
+    margin-bottom: 65px;
+  }
+}
